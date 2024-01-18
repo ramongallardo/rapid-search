@@ -67,12 +67,13 @@ const Page = () => {
       toast("Error saving data", { type: "error" });
     } finally {
       setIsSaving(false);
+      setFormData({ SR: "", Title: "", Customer: "", Description: "" });
     }
   };
 
   return (
     <div>
-      <ToastContainer/> 
+      <ToastContainer />
       <div className="flex flex-col items-center min-h-screen bg-gray-100">
         <Card className="shadow-lg max-w-2xl mx-auto mb-8 mt-1-3">
           <CardHeader>
