@@ -88,6 +88,7 @@ const Page = () => {
               <Input
                 id="Title"
                 placeholder="Enter the Title of the request"
+                value={formData.Title}
                 onChange={handleChange}
               />
             </div>
@@ -96,6 +97,7 @@ const Page = () => {
               <Textarea
                 id="Description"
                 placeholder="Enter the Description of the request"
+                value={formData.Description}
                 onChange={handleChange}
               />
             </div>
@@ -104,6 +106,7 @@ const Page = () => {
               <Input
                 id="Customer"
                 placeholder="Enter the Customer's name"
+                value={formData.Customer}
                 onChange={handleChange}
               />
             </div>
@@ -112,6 +115,7 @@ const Page = () => {
               <Input
                 id="SR"
                 placeholder="Enter the service request number"
+                value={formData.SR}
                 onChange={handleChange}
               />
             </div>
